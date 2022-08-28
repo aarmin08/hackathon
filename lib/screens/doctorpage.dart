@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
@@ -87,16 +89,18 @@ class _DoctorState extends State<Doctor> {
                 !isLoading
                     ? Button(
                         color: Color(0xffdd635e),
-                        text: "Next ->",
+                        text: "Verify Doctor Data",
                         onpress: () {
-                          Navigator.pushReplacement(context,
-                              MaterialPageRoute(builder: (ctx) => Manager()));
+                          isLoading = true;
+                          setState(() {});
+                          Timer(Duration(seconds: 2), () {
+                            isLoading = false;
+                            Navigator.pushReplacement(context,
+                                MaterialPageRoute(builder: (ctx) => Manager()));
+                          });
                         },
                         size: MediaQuery.of(context).size.width)
-                    : const SizedBox(
-                        height: 50,
-                        width: 50,
-                        child: CircularProgressIndicator.adaptive()),
+                    : CircularProgressIndicator.adaptive(),
                 SizedBox(
                   height: 10,
                 ),

@@ -15,6 +15,7 @@ class _NotifBadgeState extends State<NotifBadge> {
     return Column(
       children: [
         ListTile(
+          isThreeLine: true,
           dense: true,
           contentPadding: EdgeInsets.all(7),
           leading: CircleAvatar(
@@ -25,7 +26,7 @@ class _NotifBadgeState extends State<NotifBadge> {
             style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
           ),
           subtitle: const Text(
-            "Your doctor said: \"Hi! This is a Test Notification\"",
+            "Your doctor said: \"You have some updates about your Conditions. I will make updates to your medications. \"",
             style: TextStyle(color: Colors.white),
           ),
         ),

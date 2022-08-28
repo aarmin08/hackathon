@@ -35,6 +35,7 @@ class _ManagerState extends State<Manager> {
         headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
           return <Widget>[
             SliverAppBar(
+                stretch: true,
                 pinned: true,
                 backgroundColor: Color(0xff3e4858),
                 expandedHeight: 130,
