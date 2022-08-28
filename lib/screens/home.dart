@@ -89,7 +89,7 @@ class _HomeState extends State<Home> {
                 height: 10,
               ),
               Text(
-                "News related to your medicines",
+                "Updates about your condition: ",
                 style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,

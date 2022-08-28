@@ -205,7 +205,7 @@ class _ProfileState extends State<Profile> {
                                 setState(() {});
                               });
                         }),
-                        Text("Option 1"),
+                        Text("Morning"),
                       ],
                     ),
                     Row(
@@ -218,7 +218,7 @@ class _ProfileState extends State<Profile> {
                                 setState(() {});
                               });
                         }),
-                        Text("Option 1"),
+                        Text("Mid-day"),
                       ],
                     ),
                     Row(
@@ -231,7 +231,7 @@ class _ProfileState extends State<Profile> {
                                 setState(() {});
                               });
                         }),
-                        Text("Option 1"),
+                        Text("Evening/Night"),
                       ],
                     ),
                     Container(
